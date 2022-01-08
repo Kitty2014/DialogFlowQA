@@ -1,0 +1,60 @@
+[
+	{
+		"domainname": "HarixAutoTest",
+		"domaininfo": "",
+		"type": "",
+		"status": "",
+		"release": 1,
+		"intentlist": [
+			{
+				"intentname": "EducationLevel",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "我正在上小学二年级",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "你上过小学吗",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "你上过小学吗",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": null,
+				"frontlist": null,
+				"afterlist": null
+			},
+			{
+				"intentname": "LivenessCheck",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "自然语言处理回答：我还活着",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "自动化程序问你还活着么",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "自动化程序问你还活着么",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": null,
+				"frontlist": null,
+				"afterlist": null
+			}
+		],
+		"supportedLanguages": [
+			"zh-CN"
+		]
+	}
+]

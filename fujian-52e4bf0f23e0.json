@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "fujian",
+  "private_key_id": "52e4bf0f23e0c445ba515eb08cb04fc95991503b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCUDdJrDFIPhQtc\nvD+GeW14Y0294LUDCGqBNOaC6aK1sUGocIR9V2jqeceeTrLf9JQr6ntcy3Uern/J\nLi6tbpc8RSnqaF+UCV9r3S2F525xfQhIAOVN6gwabRJPuX7yAFKvXrk4DQyuwNxC\nw1O9E/A8ds2wFejNqDLRVpmFw+ynDOQJyt5fDAcpdKZeGSuK8qZF7giQsVbjhT/F\nyJjKykosX63jgthgnC8GSHYRFsdJ5sSLyzYF/+/PzNTargHvuvVtASKUNPn3zQPl\n9i0/fGehexL/NiZtW2vFSTXt0QoUdeqNwV3TlFlAXk8J4zo9duVup89DYrE+83sT\nTCyTngJrAgMBAAECggEARGZMV6tmAAiJ0sqfmJth0VQjdv0o82FAfzf25PVWeBWP\nzWdKNnQbIvSnHgKizie7Crz2SE0w6z9YBxRgeTyV/0C+2C5nNcfMv1L8NJhSpHjM\nyiMrzP67n7vTUWTT+q7ehGnBLV2OBfBQ8kE2XyymePC0H01H9DdoXuFg5PU60IPG\nkxBfDDn5qwugRg2BNbbnZVhK2GUG006XLQCAlGiLRPllU8yQ7tQjYFb1jhI6vPSu\nAEuSWLwPOdLvlBKLD4z+itphM4vz26VUGdnhKTq9axCsn7atAuDFFHiH81LGkAqC\nddXLLAe3OwWC9d5JW47p7H6KWk98ae+cJ/8ni4VwfQKBgQDKXTpYA1Y2Isvg6QqR\nhIr7d9JhsI1DSEPpsZa8O2uUZMXaeFOcpn0WmQc7XcP+zjlV5zTNFm5WV0y3/LiF\n4NpLjDei2S2vEIXCDAE26YzsTcg3z/4z2xQFdTBsI/S4Jn9nEDILx98IeQnr3ZbD\nLJTckrJXmnLKwQUOnDEnip+qhwKBgQC7S40JQWKPTvK1a6x5N6AgF6yo64xHp0Q0\n98RjXolONEtY2gCimfY4u+bKOuyaxe1EzHlV9KjWt2R7dFUPaLM7wW+omEW8ByX6\n4b1v9jLuZgqQVh9MiJDZhCDzy3griVAC18UHAgyaodMsEEWoJSBewoNyeD/ox5nD\nAtC8oNFt/QKBgQCt9nUYgk3TnhgsUcoPDKU5xmjqKA9YPsB7HnqZeG9kEzlvNS+T\npCA2k/j+lP3Ph1MMwQTIJbdWrBe8txmdpY2jknelnBPEwmxqQ02r+hx2a+tp53j8\n9SGCC5tD66kNwbKWU/rh28GlFABuboCTajjSYZ3E53Y1TLdfNvCesHHP8wKBgBXZ\nKVmkC/hFsGBjcBov1/kGafjGiXWuWHGJWZpx47iAty1lON++8A8MNE7w8rrXTedR\npvHU+YEaoZkZJ/cFMqtM1FapdLELcG3EuZF++c//jUnrEfmekK8fD60A1kLV4MSE\nIRLBNXEwYW7pcwa7VfxX2neW+XWRGym5gVoPtH6NAoGBAI1jsL9nVcxuKUxgmD5t\ny9wGigFMQavszAEtN9xyaQUaw1uoBfrO5K3xiWKPKz2pFm1anIvoUsQPjV2ymqlU\nYc92eNonsfBJXZ/bCq95oM4b0KdslBRz1GAVch867jJjcpvU/BHHtIc9MKFH6U/+\nm/Fyk+bnDgEZMZCLPkkebBbU\n-----END PRIVATE KEY-----\n",
+  "client_email": "xm-584@fujian.iam.gserviceaccount.com",
+  "client_id": "101331898446695371760",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/xm-584%40fujian.iam.gserviceaccount.com"
+}

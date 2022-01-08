@@ -1,0 +1,860 @@
+[
+	{
+		"domainname": "SpeechBasedGrasp",
+		"domaininfo": "基于语音交互的抓取",
+		"type": "",
+		"status": "",
+		"release": 1,
+		"intentlist": [
+			{
+				"intentname": "ApproachObject",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[靠|走|逼|接|贴][近]@object:object",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[靠|走|逼|接|贴][近]",
+								"paramname": ""
+							},
+							{
+								"entityname": "object",
+								"text": "@object:object",
+								"paramname": "object"
+							}
+						]
+					}
+				],
+				"paramlist": [
+					{
+						"entityname": "object",
+						"paramname": "object",
+						"required": false,
+						"prompt": "",
+						"extendable": false,
+						"isexistincorpus": false
+					}
+				],
+				"frontlist": null,
+				"afterlist": null
+			},
+			{
+				"intentname": "FindObject",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[去|过去|]@room:zoom[看看|看一下|看下]@point:point[上|上面][都|][有][什么][东西|物品|]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[去|过去|]",
+								"paramname": ""
+							},
+							{
+								"entityname": "room",
+								"text": "@room:zoom",
+								"paramname": "zoom"
+							},
+							{
+								"entityname": "",
+								"text": "[看看|看一下|看下]",
+								"paramname": ""
+							},
+							{
+								"entityname": "point",
+								"text": "@point:point",
+								"paramname": "point"
+							},
+							{
+								"entityname": "",
+								"text": "[上|上面][都|][有][什么][东西|物品|]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[去|过去|][看看|看一下|看下]@room:zoom[的|]@point:point[上|上面][都|][有][什么][东西|物品|]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[去|过去|][看看|看一下|看下]",
+								"paramname": ""
+							},
+							{
+								"entityname": "room",
+								"text": "@room:zoom",
+								"paramname": "zoom"
+							},
+							{
+								"entityname": "",
+								"text": "[的|]",
+								"paramname": ""
+							},
+							{
+								"entityname": "point",
+								"text": "@point:point",
+								"paramname": "point"
+							},
+							{
+								"entityname": "",
+								"text": "[上|上面][都|][有][什么][东西|物品|]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[去|过去|][看看|看一下|看下]@room:zoom[的|]@point:point[上|上面][都|][有][什么][东西|物品|]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[去|过去|][看看|看一下|看下]",
+								"paramname": ""
+							},
+							{
+								"entityname": "room",
+								"text": "@room:zoom",
+								"paramname": "zoom"
+							},
+							{
+								"entityname": "",
+								"text": "[的|]",
+								"paramname": ""
+							},
+							{
+								"entityname": "point",
+								"text": "@point:point",
+								"paramname": "point"
+							},
+							{
+								"entityname": "",
+								"text": "[上|上面][都|][有][什么][东西|物品|]",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": [
+					{
+						"entityname": "point",
+						"paramname": "point",
+						"required": false,
+						"prompt": "",
+						"extendable": false,
+						"isexistincorpus": false
+					},
+					{
+						"entityname": "room",
+						"paramname": "zoom",
+						"required": false,
+						"prompt": "",
+						"extendable": false,
+						"isexistincorpus": false
+					}
+				],
+				"frontlist": null,
+				"afterlist": null
+			},
+			{
+				"intentname": "GoToSee",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[去|过去|][看看|看一下|看下]@point:point[上|上面][都|][有][什么][东西|物品|]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[去|过去|][看看|看一下|看下]",
+								"paramname": ""
+							},
+							{
+								"entityname": "point",
+								"text": "@point:point",
+								"paramname": "point"
+							},
+							{
+								"entityname": "",
+								"text": "[上|上面][都|][有][什么][东西|物品|]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[去|过去|][看看|看一下|看下]@point:point[上|上面][都|][有][什么][东西|物品|]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[去|过去|][看看|看一下|看下]",
+								"paramname": ""
+							},
+							{
+								"entityname": "point",
+								"text": "@point:point",
+								"paramname": "point"
+							},
+							{
+								"entityname": "",
+								"text": "[上|上面][都|][有][什么][东西|物品|]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[带我|带][去|到]@point:point[那|]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[带我|带][去|到]",
+								"paramname": ""
+							},
+							{
+								"entityname": "point",
+								"text": "@point:point",
+								"paramname": "point"
+							},
+							{
+								"entityname": "",
+								"text": "[那|]",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": [
+					{
+						"entityname": "point",
+						"paramname": "point",
+						"required": false,
+						"prompt": "",
+						"extendable": false,
+						"isexistincorpus": false
+					}
+				],
+				"frontlist": null,
+				"afterlist": null
+			},
+			{
+				"intentname": "GraspObectToMe",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[去|过去|][把][那个|这个|]@object:object[抓|拿|抓取|带|稍][给我|到我这|过来|到我跟前|到我前面|到我面前]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[去|过去|][把][那个|这个|]",
+								"paramname": ""
+							},
+							{
+								"entityname": "object",
+								"text": "@object:object",
+								"paramname": "object"
+							},
+							{
+								"entityname": "",
+								"text": "[抓|拿|抓取|带|稍][给我|到我这|过来|到我跟前|到我前面|到我面前]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[去|过去|][把][那个|这个|]@object:object[给我][抓|拿|抓取|带|稍][过来|起来]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[去|过去|][把][那个|这个|]",
+								"paramname": ""
+							},
+							{
+								"entityname": "object",
+								"text": "@object:object",
+								"paramname": "object"
+							},
+							{
+								"entityname": "",
+								"text": "[给我][抓|拿|抓取|带|稍][过来|起来]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[去|过去|][抓|抓取|拿][个|]@object:object[给我|到我这|过来|到我跟前|到我前面|到我面前]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[去|过去|][抓|抓取|拿][个|]",
+								"paramname": ""
+							},
+							{
+								"entityname": "object",
+								"text": "@object:object",
+								"paramname": "object"
+							},
+							{
+								"entityname": "",
+								"text": "[给我|到我这|过来|到我跟前|到我前面|到我面前]",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": [
+					{
+						"entityname": "object",
+						"paramname": "object",
+						"required": false,
+						"prompt": "",
+						"extendable": false,
+						"isexistincorpus": false
+					}
+				],
+				"frontlist": null,
+				"afterlist": null
+			},
+			{
+				"intentname": "GraspObectToPosition",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[去|过去|][把][那个|这个|]@object:object[抓|拿|抓取|带][到]@point:point[上|上面]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[去|过去|][把][那个|这个|]",
+								"paramname": ""
+							},
+							{
+								"entityname": "object",
+								"text": "@object:object",
+								"paramname": "object"
+							},
+							{
+								"entityname": "",
+								"text": "[抓|拿|抓取|带][到]",
+								"paramname": ""
+							},
+							{
+								"entityname": "point",
+								"text": "@point:point",
+								"paramname": "point"
+							},
+							{
+								"entityname": "",
+								"text": "[上|上面]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[去|过去|][抓|抓取|拿][个|]@object:object[到]@point:point[上|上面]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[去|过去|][抓|抓取|拿][个|]",
+								"paramname": ""
+							},
+							{
+								"entityname": "object",
+								"text": "@object:object",
+								"paramname": "object"
+							},
+							{
+								"entityname": "",
+								"text": "[到]",
+								"paramname": ""
+							},
+							{
+								"entityname": "point",
+								"text": "@point:point",
+								"paramname": "point"
+							},
+							{
+								"entityname": "",
+								"text": "[上|上面]",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": [
+					{
+						"entityname": "object",
+						"paramname": "object",
+						"required": false,
+						"prompt": "",
+						"extendable": false,
+						"isexistincorpus": false
+					},
+					{
+						"entityname": "point",
+						"paramname": "point",
+						"required": false,
+						"prompt": "",
+						"extendable": false,
+						"isexistincorpus": false
+					}
+				],
+				"frontlist": null,
+				"afterlist": null
+			},
+			{
+				"intentname": "MoveBackward",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[向|往|靠][后|后面][一点|点|些|一些|走]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[向|往|靠][后|后面][一点|点|些|一些|走]",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": null,
+				"frontlist": null,
+				"afterlist": null
+			},
+			{
+				"intentname": "MoveForward",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[向|往|靠][前|前面][一点|点|些|一些|走]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[向|往|靠][前|前面][一点|点|些|一些|走]",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": null,
+				"frontlist": null,
+				"afterlist": null
+			},
+			{
+				"intentname": "MoveLeft",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[向|往|靠][左|左边][一点|点|些|一些|走]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[向|往|靠][左|左边][一点|点|些|一些|走]",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": null,
+				"frontlist": null,
+				"afterlist": null
+			},
+			{
+				"intentname": "MoveRight",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[向|往|靠][右|右边][一点|点|些|一些|走]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[向|往|靠][右|右边][一点|点|些|一些|走]",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": null,
+				"frontlist": null,
+				"afterlist": null
+			},
+			{
+				"intentname": "navigationToPosion",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[去]@point:destination[的|][地点|位置|地方]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[去]",
+								"paramname": ""
+							},
+							{
+								"entityname": "point",
+								"text": "@point:destination",
+								"paramname": "destination"
+							},
+							{
+								"entityname": "",
+								"text": "[的|][地点|位置|地方]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[去]@point:destination[这|那][个|][地方|地点|位置|]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[去]",
+								"paramname": ""
+							},
+							{
+								"entityname": "point",
+								"text": "@point:destination",
+								"paramname": "destination"
+							},
+							{
+								"entityname": "",
+								"text": "[这|那][个|][地方|地点|位置|]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[回|走][到]@point:destination[的|][地方|地点|位置]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[回|走][到]",
+								"paramname": ""
+							},
+							{
+								"entityname": "point",
+								"text": "@point:destination",
+								"paramname": "destination"
+							},
+							{
+								"entityname": "",
+								"text": "[的|][地方|地点|位置]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[回|走][到]@point:destination[这|那][边|里|]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[回|走][到]",
+								"paramname": ""
+							},
+							{
+								"entityname": "point",
+								"text": "@point:destination",
+								"paramname": "destination"
+							},
+							{
+								"entityname": "",
+								"text": "[这|那][边|里|]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[回|走][到]@point:destination[这|那|][个|][地方|地点|位置]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[回|走][到]",
+								"paramname": ""
+							},
+							{
+								"entityname": "point",
+								"text": "@point:destination",
+								"paramname": "destination"
+							},
+							{
+								"entityname": "",
+								"text": "[这|那|][个|][地方|地点|位置]",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": [
+					{
+						"entityname": "point",
+						"paramname": "destination",
+						"required": false,
+						"prompt": "去哪？",
+						"extendable": false,
+						"isexistincorpus": false
+					}
+				],
+				"frontlist": null,
+				"afterlist": null
+			},
+			{
+				"intentname": "PutDownObject",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[好了|可以了|][放下][来|]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[好了|可以了|][放下][来|]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[把][那个|这个|]@object:object[给我|][放下][来|]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[把][那个|这个|]",
+								"paramname": ""
+							},
+							{
+								"entityname": "object",
+								"text": "@object:object",
+								"paramname": "object"
+							},
+							{
+								"entityname": "",
+								"text": "[给我|][放下][来|]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[放下]@object:object",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[放下]",
+								"paramname": ""
+							},
+							{
+								"entityname": "object",
+								"text": "@object:object",
+								"paramname": "object"
+							}
+						]
+					}
+				],
+				"paramlist": [
+					{
+						"entityname": "object",
+						"paramname": "object",
+						"required": false,
+						"prompt": "",
+						"extendable": false,
+						"isexistincorpus": false
+					}
+				],
+				"frontlist": null,
+				"afterlist": null
+			},
+			{
+				"intentname": "QAName",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[我是|我叫]@name:name",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[我是|我叫]",
+								"paramname": ""
+							},
+							{
+								"entityname": "name",
+								"text": "@name:name",
+								"paramname": "name"
+							}
+						]
+					}
+				],
+				"paramlist": [
+					{
+						"entityname": "name",
+						"paramname": "name",
+						"required": false,
+						"prompt": "",
+						"extendable": false,
+						"isexistincorpus": false
+					}
+				],
+				"frontlist": null,
+				"afterlist": null
+			},
+			{
+				"intentname": "Stop",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[stop]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[stop]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[不要|别|禁止|不许|不能|不可用|不准][动|走动|抓][了|]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[不要|别|禁止|不许|不能|不可用|不准][动|走动|抓][了|]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[好了|][停|停止|停下来]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[好了|][停|停止|停下来]",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": null,
+				"frontlist": null,
+				"afterlist": null
+			},
+			{
+				"intentname": "TakeAction",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[请|][做|做一下|做下][动作|]@motionName:motionName",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[请|][做|做一下|做下][动作|]",
+								"paramname": ""
+							},
+							{
+								"entityname": "motionName",
+								"text": "@motionName:motionName",
+								"paramname": "motionName"
+							}
+						]
+					}
+				],
+				"paramlist": [
+					{
+						"entityid": 121184,
+						"entityname": "motionName",
+						"paramname": "motionName",
+						"required": false,
+						"prompt": "",
+						"extendable": false,
+						"isexistincorpus": false
+					}
+				],
+				"frontlist": null,
+				"afterlist": null
+			},
+			{
+				"intentname": "TakeRest",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[可以了|][去|回去|][休息][吧|]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[可以了|][去|回去|][休息][吧|]",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": null,
+				"frontlist": null,
+				"afterlist": null
+			}
+		],
+		"supportedLanguages": null
+	}
+]

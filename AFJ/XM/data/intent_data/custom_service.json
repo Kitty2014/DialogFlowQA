@@ -1,0 +1,1081 @@
+[
+	{
+		"domainname": "wjys",
+		"domaininfo": "新增三个点",
+		"type": "自建",
+		"status": "可用",
+		"release": 1,
+		"intentlist": [
+			{
+				"intentname": "navigationToPosition",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[回][到|]@position:destination",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[回][到|]",
+								"paramname": ""
+							},
+							{
+								"entityname": "position",
+								"text": "@position:destination",
+								"paramname": "destination"
+							}
+						]
+					},
+					{
+						"text": "@position:destination",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "position",
+								"text": "@position:destination",
+								"paramname": "destination"
+							}
+						]
+					}
+				],
+				"paramlist": [
+					{
+						"entityname": "position",
+						"paramname": "destination",
+						"required": false,
+						"prompt": "",
+						"extendable": false
+					}
+				]
+			},
+			{
+				"intentname": "Test",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "@sys.date:date  星座如何？",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "sys.date",
+								"text": "@sys.date:date",
+								"paramname": "date"
+							},
+							{
+								"entityname": "",
+								"text": "  星座如何？",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "今天射手座怎么样",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "sys.date",
+								"text": "今天",
+								"paramname": "date"
+							},
+							{
+								"entityname": "",
+								"text": "射手座怎么样",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "本周射手座怎么样",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "sys.date-duration",
+								"text": "本周",
+								"paramname": "date-duration"
+							},
+							{
+								"entityname": "",
+								"text": "射手座怎么样",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": [
+					{
+						"entityname": "sys.date",
+						"paramname": "date",
+						"required": false,
+						"prompt": "",
+						"extendable": false
+					},
+					{
+						"entityname": "sys.date-duration",
+						"paramname": "date-duration",
+						"required": false,
+						"prompt": "",
+						"extendable": false
+					}
+				]
+			}
+		]
+	},
+	{
+		"domainname": "test_position",
+		"domaininfo": "测试新增坐标点",
+		"type": "自建",
+		"status": "可用",
+		"release": 1,
+		"intentlist": [
+			{
+				"intentname": "navigationToPosition",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[去|带我去|到|回|]@position:destination",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[去|带我去|到|回|]",
+								"paramname": ""
+							},
+							{
+								"entityname": "position",
+								"text": "@position:destination",
+								"paramname": "destination"
+							}
+						]
+					},
+					{
+						"text": "附近有需求",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "附近有需求",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "木星轨迹球",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "木星轨迹球",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "四六",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "四六",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "少年吧",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "少年吧",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "先进女之后怎么他第三个王健",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "先进女之后怎么他第三个王健",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": [
+					{
+						"entityname": "position",
+						"paramname": "destination",
+						"required": false,
+						"prompt": "",
+						"extendable": false
+					}
+				]
+			}
+		]
+	},
+	{
+		"domainname": "automove",
+		"domaininfo": "白云机场自动行走",
+		"release": 1,
+		"intentlist": [
+			{
+				"intentname": "navigationToPosition",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[按照]@baiyunAirport_path:destination[自动行走]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[按照]",
+								"paramname": ""
+							},
+							{
+								"entityname": "baiyunAirport_path",
+								"text": "@baiyunAirport_path:destination",
+								"paramname": "destination"
+							},
+							{
+								"entityname": "",
+								"text": "[自动行走]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[自动行走]@baiyunAirport_path:destination",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[自动行走]",
+								"paramname": ""
+							},
+							{
+								"entityname": "baiyunAirport_path",
+								"text": "@baiyunAirport_path:destination",
+								"paramname": "destination"
+							}
+						]
+					},
+					{
+						"text": "[自动行走]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[自动行走]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "30",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "30",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": [
+					{
+						"entityname": "baiyunAirport_path",
+						"paramname": "destination",
+						"required": true,
+						"prompt": "请指定自动行走路线",
+						"extendable": false
+					}
+				]
+			}
+		]
+	},
+	{
+		"domainname": "baiyunflight",
+		"domaininfo": "白云机场航班查询",
+		"release": 1,
+		"intentlist": [
+			{
+				"intentname": "GetFlightInfoByNo",
+				"inputcontext": "",
+				"outputcontext": "GetFlightInfoByNo",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[帮我|帮忙|][查一下|查下|查询|查询一下|]@sys.date:depDate@sys.flight-no:flightNo[的|][航班][信息|]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[帮我|帮忙|][查一下|查下|查询|查询一下|]",
+								"paramname": ""
+							},
+							{
+								"entityname": "sys.date",
+								"text": "@sys.date:depDate",
+								"paramname": "depDate"
+							},
+							{
+								"entityname": "sys.flight-no",
+								"text": "@sys.flight-no:flightNo",
+								"paramname": "flightNo"
+							},
+							{
+								"entityname": "",
+								"text": "[的|][航班][信息|]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[帮我|帮忙|][查一下|查下|查询|查询一下|]@sys.date:depDate[航班]@sys.flight-no:flightNo[的|][信息|]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[帮我|帮忙|][查一下|查下|查询|查询一下|]",
+								"paramname": ""
+							},
+							{
+								"entityname": "sys.date",
+								"text": "@sys.date:depDate",
+								"paramname": "depDate"
+							},
+							{
+								"entityname": "",
+								"text": "[航班]",
+								"paramname": ""
+							},
+							{
+								"entityname": "sys.flight-no",
+								"text": "@sys.flight-no:flightNo",
+								"paramname": "flightNo"
+							},
+							{
+								"entityname": "",
+								"text": "[的|][信息|]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[帮我|帮忙|][查一下|查下|查询|查询一下|]@sys.flight-no:flightNo[的|][航班][信息|]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[帮我|帮忙|][查一下|查下|查询|查询一下|]",
+								"paramname": ""
+							},
+							{
+								"entityname": "sys.flight-no",
+								"text": "@sys.flight-no:flightNo",
+								"paramname": "flightNo"
+							},
+							{
+								"entityname": "",
+								"text": "[的|][航班][信息|]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[帮我|帮忙|][查一下|查下|查询|查询一下|][航班][信息|]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[帮我|帮忙|][查一下|查下|查询|查询一下|][航班][信息|]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[帮我|帮忙|][查一下|查下|查询|查询一下|]@sys.date:depDate[的|][航班][信息|]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[帮我|帮忙|][查一下|查下|查询|查询一下|]",
+								"paramname": ""
+							},
+							{
+								"entityname": "sys.date",
+								"text": "@sys.date:depDate",
+								"paramname": "depDate"
+							},
+							{
+								"entityname": "",
+								"text": "[的|][航班][信息|]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[帮我|帮忙|][查一下|查下|查询|查询一下|][航班]@sys.flight-no:flightNo[的|][信息|]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[帮我|帮忙|][查一下|查下|查询|查询一下|][航班]",
+								"paramname": ""
+							},
+							{
+								"entityname": "sys.flight-no",
+								"text": "@sys.flight-no:flightNo",
+								"paramname": "flightNo"
+							},
+							{
+								"entityname": "",
+								"text": "[的|][信息|]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "英语吗",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "英语吗",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": [
+					{
+						"entityname": "sys.date",
+						"paramname": "depDate",
+						"required": false,
+						"prompt": "",
+						"extendable": false
+					},
+					{
+						"entityname": "sys.flight-no",
+						"paramname": "flightNo",
+						"required": true,
+						"prompt": "请问您需要查询的航班号是多少？",
+						"extendable": false
+					}
+				]
+			},
+			{
+				"intentname": "GetCheckinInfoByGate",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[帮我|帮忙|][查一下|查下|查询|查询一下|]@baiyunAirport_boardGate:gate[登机口|][的|][值机信息]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[帮我|帮忙|][查一下|查下|查询|查询一下|]",
+								"paramname": ""
+							},
+							{
+								"entityname": "baiyunAirport_boardGate",
+								"text": "@baiyunAirport_boardGate:gate",
+								"paramname": "gate"
+							},
+							{
+								"entityname": "",
+								"text": "[登机口|][的|][值机信息]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[帮我|帮忙|][查一下|查下|查询|查询一下|][登机口|][的|][值机信息]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[帮我|帮忙|][查一下|查下|查询|查询一下|][登机口|][的|][值机信息]",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": [
+					{
+						"entityname": "baiyunAirport_boardGate",
+						"paramname": "gate",
+						"required": true,
+						"prompt": "请问哪个登机口呢？",
+						"extendable": false
+					}
+				]
+			},
+			{
+				"intentname": "GetFlightInfoByAirport",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[帮我|帮忙|][查一下|查下|查询|查询一下|][从|]@baiyunAirport_airport:depAirportCode[出发|起飞|飞|离开|][的|][航班][信息|]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[帮我|帮忙|][查一下|查下|查询|查询一下|][从|]",
+								"paramname": ""
+							},
+							{
+								"entityname": "baiyunAirport_airport",
+								"text": "@baiyunAirport_airport:depAirportCode",
+								"paramname": "depAirportCode"
+							},
+							{
+								"entityname": "",
+								"text": "[出发|起飞|飞|离开|][的|][航班][信息|]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "[帮我|帮忙|][查一下|查下|查询|查询一下|][去|到|到达|去往|飞往|飞]@baiyunAirport_airport:arrAirportCode[的|][航班][信息|]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[帮我|帮忙|][查一下|查下|查询|查询一下|][去|到|到达|去往|飞往|飞]",
+								"paramname": ""
+							},
+							{
+								"entityname": "baiyunAirport_airport",
+								"text": "@baiyunAirport_airport:arrAirportCode",
+								"paramname": "arrAirportCode"
+							},
+							{
+								"entityname": "",
+								"text": "[的|][航班][信息|]",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": [
+					{
+						"entityname": "baiyunAirport_airport",
+						"paramname": "arrAirportCode",
+						"required": false,
+						"prompt": "",
+						"extendable": false
+					},
+					{
+						"entityname": "baiyunAirport_airport",
+						"paramname": "depAirportCode",
+						"required": false,
+						"prompt": "",
+						"extendable": false
+					}
+				]
+			}
+		]
+	},
+	{
+		"domainname": "wzntest",
+		"domaininfo": "",
+		"release": 1,
+		"intentlist": [
+			{
+				"intentname": "qwq",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "[今天|明天|][天气]很不错",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "[今天|明天|][天气]很不错",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "会有问题啊",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "会有问题啊",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "断了",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "断了",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "你开门吧",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "你开门吧",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "这个还没事",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "这个还没事",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": null
+			},
+			{
+				"intentname": "OVO",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "今天@wzn:shijian[好]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "今天",
+								"paramname": ""
+							},
+							{
+								"entityname": "wzn",
+								"text": "@wzn:shijian",
+								"paramname": "shijian"
+							},
+							{
+								"entityname": "",
+								"text": "[好]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "今天好",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "今天好",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": [
+					{
+						"entityname": "wzn",
+						"paramname": "shijian",
+						"required": true,
+						"prompt": "测试追问",
+						"extendable": false
+					}
+				]
+			},
+			{
+				"intentname": "wzn1",
+				"inputcontext": "",
+				"outputcontext": "输出语境1",
+				"prompt": "哈哈哈哈",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "测试命中意图",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "测试命中意图",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": null
+			},
+			{
+				"intentname": "wzn2",
+				"inputcontext": "输出语境1",
+				"outputcontext": "",
+				"prompt": "啦啦啦啦\n",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "能不能命中",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "能不能命中",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": null
+			},
+			{
+				"intentname": "wzntest",
+				"inputcontext": "a1",
+				"outputcontext": "b1",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "测试wzntest",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "测试wzntest",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "a1b1",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "a1b1",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": null
+			},
+			{
+				"intentname": "day",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "@day：shijianduan[好]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "@day",
+								"paramname": ""
+							},
+							{
+								"entityname": "",
+								"text": "：shijianduan[好]",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": null
+			},
+			{
+				"intentname": "cj测试",
+				"inputcontext": "上午好",
+				"outputcontext": "上午好",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "@",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "@",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": null
+			},
+			{
+				"intentname": "训练",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "是谁的号",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "是谁的号",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "证监会",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "证监会",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": null
+			}
+		]
+	},
+	{
+		"domainname": "lead_meeting_room",
+		"domaininfo": "",
+		"release": 1,
+		"intentlist": [
+			{
+				"intentname": "lead_meeting_room",
+				"inputcontext": "",
+				"outputcontext": "",
+				"prompt": "",
+				"action": "",
+				"examplelist": [
+					{
+						"text": "bring me to qiyehao",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "bring me to qiyehao",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "bring me to",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "bring me to",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "你好企业号",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "你好企业号",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "测试企业号",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "测试企业号",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "Take me to the meeting room",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "Take me to the meeting room",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "please follow with me",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "please follow with me",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "qiyehao",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "qiyehao",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "带我去会议室",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "带我去会议室",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "会议室位置",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "会议室位置",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "会议室在哪",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "会议室在哪",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "带我去企业号",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "带我去企业号",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "to enterprise",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "to enterprise",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "Quick Button \u0026 Answer右拐直走第三个房间3[cloudminds/RobotStandInit]",
+						"type": "complex",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "Quick Button \u0026 Answer右拐直走第三个房间3[cloudminds/RobotStandInit]",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "follow with me",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "follow with me",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "follow",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "follow",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "bring me to enterprise office",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "bring me to enterprise office",
+								"paramname": ""
+							}
+						]
+					},
+					{
+						"text": "bring me to office",
+						"type": "quote",
+						"labellist": [
+							{
+								"entityname": "",
+								"text": "bring me to office",
+								"paramname": ""
+							}
+						]
+					}
+				],
+				"paramlist": null
+			}
+		]
+	}
+]
