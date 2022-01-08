@@ -1,7 +1,36 @@
 # DialogFlowQA
 
+【工程运行】
+ 运行dialogflow_api_client.py
+
+![img_10.png](img_10.png)
+
+ 
+
+ 调用【问答】接口
+
+http://0.0.0.0:9009/docs#/default/dialogue_qa_df_qa_post
+
+ ![img_11.png](img_11.png)
 
 
+
+ 
+
+ 
+
+【批量问答对表格录入】
+
+http://0.0.0.0:9009/docs#/default/bulk_import_qa_form_build_dialogflow_qa_form_post
+
+ ![img_12.png](img_12.png)
+
+
+
+ 
+
+ 
+【配置谷歌DialogFlow key】
 https://console.cloud.google.com/projectselector2/iam-admin/serviceaccounts?supportedpurview=project
 ![img_1.png](img_1.png)
 ![img.png](img.png)
